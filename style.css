@@ -1,10 +1,10 @@
 body {
   background-color: #e3e7e8;
-  font-family: fantasy;
+  font-family: monospace;
 }
 
 .container {
-  width: 900px;
+  width: 700px;
   margin: auto;
 }
 
@@ -65,6 +65,7 @@ header .shopping span {
   width: 90%;
   height: 250px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .list .item .title {
@@ -173,27 +174,39 @@ header .shopping span {
   margin-bottom: 10px;
 }
 
+.social-icons {
+  padding: 1px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.ingredients-container h2 {
+  top: 20px;
+  font-size: 16px;
+}
+
 .ingredients-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  position: fixed;
-  top: 54%;
+  gap: 3px;
+  position: absolute;
+  top: 59%;
   right: 0;
   transform: translateY(-50%);
-  padding: 30px;
+  padding: 20px;
   background-color: #f4c3ed;
   z-index: 999;
-  border-radius: 5;
+  border-radius: 7px;
   box-shadow: 0 5px 20px #757676;
-  right: 1400px;
-  width: 150px;
+  right: 1150px;
+  width: 130px;
+  height: 370px;
 }
 
 .ingredients-container button {
   display: flex;
   margin-bottom: 5px;
-  padding: 15px;
+  padding: 10px;
   background-color: #1c1f25;
   color: #fff;
   border: none;
@@ -210,27 +223,21 @@ header .shopping span {
   top: 10px;
   right: 10px;
   background-color: #dce0e1;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   letter-spacing: 1px;
   text-align: center;
   z-index: 999;
 }
 
-.social-icons {
-  padding: 1px;
-  width: 100%;
-  font-size: 34px;
-}
-
 .signup-form-logo {
   position: relative;
-  top: -90px;
-  left: 780px;
+  top: -67px;
+  left: 570px;
   cursor: pointer;
   z-index: 0;
   width: 0px;
-  background-color: hsl(220, 32%, 89%);
+  background-color: hsl(220, 71%, 7%);
 }
 
 .signup-form-logo img {
@@ -243,25 +250,26 @@ header .shopping span {
 .signup-form-container {
   display: none;
   position: fixed;
-  top: 104%;
-  right: 57%;
+  top: 107%;
+  right: 55%;
   transform: translate(-90%, -125%);
-  width: 350px;
-  height: 550px;
+  width: 300px;
+  height: 450px;
   background-color: #e3e7e8;
   color: #1c1f25;
-  font-size: 23px;
+  font-size: 20px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   letter-spacing: 1px;
   text-align: center;
   border-radius: 10px;
   z-index: 1000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .signup-form-container h2 {
   color: #1c1f25;
-  font-size: 24px;
+  font-size: 23px;
   margin-bottom: 20px;
 }
 
