@@ -19,8 +19,8 @@ closeShopping.addEventListener("click", () => {
 
 function moveIngredientsContainer() {
   ingredientsContainer.style.right = body.classList.contains("active")
-    ? "1500px"
-    : "1400px";
+    ? "1250px"
+    : "1150px";
 }
 
 body.addEventListener("click", (event) => {
@@ -187,6 +187,7 @@ function addIngredientToCard(ingredientName, price) {
 }
 
 function toggleSignupForm() {
-  var formContainer = document.querySelector('.signup-form-container');
-  formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+  var formContainer = document.querySelector(".signup-form-container");
+  formContainer.style.display =
+    formContainer.style.display === "none" ? "block" : "none";
 }
