@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+</style>
+
+<body class="">
+    <div class="container">
+        <header>
+            <h1>BURGER SHOP</h1>                   
+            <div class="shopping">
+                <img src="image/shopping logo.jpg">
+                <span class="quantity">0</span>               
+            </div>
+          
+
+<div class="signup-form-logo" onclick="toggleSignupForm()">
+    <img src="image/sign-up.png" alt="Signup Form Logo">
+</div>
+
+<div class="signup-form-container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<script>
+    function toggleSignupForm() {
+        var formContainer = document.querySelector('.signup-form-container');
+        formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+        </header>
+        <div class="marquee">
+            <marquee style="color: green; background-color:white;" width="800px">Shop Is Open Now</marquee>
+        </div>
+        
+        <div class="list">           
+        </div>
+    </div>
+
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    
+    
+        <div class="ingredients">
+           
+            <div class="ingredients-container">
+                <h2 align="center">ADD SOME EXTRA INGREDIENTS</h2> 
+                <button onclick="addIngredientToCard('Burger Buns', 20)"> Burger Buns (20)</button>
+                <button onclick="addIngredientToCard('cheese slices', 20)"> cheese slices (20)</button>
+                <button onclick="addIngredientToCard('Tomato ketchup', 20)"> Tomato ketchup (20)</button>
+                <button onclick="addIngredientToCard('Tablespoon butter', 20)"> Tablespoon butter (20)</button>
+                <button onclick="addIngredientToCard('Sliced tomato', 20)"> Sliced tomato (20)</button>
+                <button onclick="addIngredientToCard('Cup corn', 20)"> Cup corn (20)</button>
+            </div>
+        </div>
+
+        <div class="additional-box">
+            <h2>Vikas`s Creation</h2>
+            <div class="social-container">
+                <ul class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100026032278580"><i class="fa fa-facebook"></i></a>
+                    <a href="http://github.com/Vikas-Pandit07"><i class="fa fa-github"></i></a>
+                    <a href="http://www.instagram.com/its.vikaspandit?igsh=MXJOMGZKOW1iY3VsbQ== "><i class="fa fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/vikas-pandit-53202021?utm_source=share_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <i class="fa fa-linkedin"></i></a>
+                </ul>
+            </div>
+      </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
