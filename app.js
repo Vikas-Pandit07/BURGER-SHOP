@@ -185,3 +185,8 @@ function addIngredientToCard(ingredientName, price) {
 
   reloadCard();
 }
+
+function toggleSignupForm() {
+  var formContainer = document.querySelector('.signup-form-container');
+  formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+}
