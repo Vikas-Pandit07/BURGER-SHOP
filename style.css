@@ -4,8 +4,10 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   margin: auto;
+  transition: 0.8s;
 }
 
 header {
@@ -63,7 +65,7 @@ header .shopping span {
 
 .list .item img {
   width: 90%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -156,6 +158,7 @@ header .shopping span {
 .listCard li img {
   width: 90%;
 }
+
 .listCard li button {
   background-color: #fff5;
   border: none;
@@ -181,7 +184,7 @@ header .shopping span {
 }
 
 .ingredients-container h2 {
-  top: 20px;
+  top: 10px;
   font-size: 16px;
 }
 
@@ -199,8 +202,9 @@ header .shopping span {
   border-radius: 7px;
   box-shadow: 0 5px 20px #757676;
   right: 1150px;
-  width: 130px;
-  height: 370px;
+  width: 100px;
+  height: 400px;
+  transition: 0.8s;
 }
 
 .ingredients-container button {
@@ -212,6 +216,7 @@ header .shopping span {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .ingredients-container button:hover {
@@ -297,4 +302,129 @@ header .shopping span {
 
 #signupForm button:hover {
   background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Add styles for smaller screens */
+  .container {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 380px;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+  header .shopping img {
+    position: relative;
+    top: -152%;
+    width: 40px;
+    height: 40px;
+    border-radius: 22%;
+    cursor: pointer;
+  }
+
+  header .shopping span {
+    left: 96%;
+    top: -165%;
+  }
+
+  .signup-form-logo {
+    position: relative;
+    top: -108px;
+    left: 290px;
+    cursor: pointer;
+    width: 0px;
+  }
+
+  .signup-form-logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .signup-form-container {
+    top: 56.5%;
+    right: 100%;
+    transform: translate(105%, -52%);
+    width: 185px;
+    height: 380px;
+    font-size: 17px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  marquee {
+    width: 120%;
+  }
+
+  .card {
+    width: 49%;
+  }
+
+  .active .card {
+    left: calc(100% - 260px);
+  }
+
+  .list .item img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .list .item button {
+    width: 100%;
+    height: 50px;
+    padding: 2px;
+    text-align: right;
+  }
+
+  .listCard li div {
+    justify-content: right;
+  }
+
+  .listCard li img {
+    width: 80%;
+  }
+
+  .ingredients-container {
+    flex-direction: column;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-90px);
+    padding-bottom: 0px;
+    right: 400px;
+    width: 70px;
+    height: 320px;
+  }
+
+  .ingredients-container button {
+    margin-bottom: 5px;
+    padding: 2px;
+    font-size: 11.9px;
+  }
+
+  .ingredients-container h2 {
+    font-size: 13px;
+  }
+
+  .list .item button {
+    width: 100%;
+    height: 14%;
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .additional-box {
+    padding: 20px;
+    margin-left: 28%;
+  }
 }
