@@ -25,7 +25,6 @@ function moveIngredientsContainer() {
 
 body.addEventListener("click", (event) => {
   if (!event.target.closest(".shopping") && body.classList.contains("active")) {
-    body.classList.remove("active");
     moveIngredientsContainer();
   }
 });
@@ -85,6 +84,24 @@ let products = [
     image: "9.jpg",
     price: 130,
   },
+  {
+    id: 10,
+    name: "Vegetable chess burger",
+    image: "10.jpg",
+    price: 130,
+  },
+  {
+    id: 11,
+    name: "Grilled-hamburger",
+    image: "11.jpg",
+    price: 130,
+  },
+  {
+    id: 12,
+    name: "Gourmet-chees burger",
+    image: "12.jpg",
+    price: 130,
+  },
 ];
 let listCards = [];
 function initApp() {
@@ -96,7 +113,7 @@ function initApp() {
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>
-            <button onclick="removeFromCard(${key})">Remove To Card</button>`;
+            <button onclick="removeFromCard(${key})">Remove from Card</button>`;
     list.appendChild(newDiv);
   });
 
